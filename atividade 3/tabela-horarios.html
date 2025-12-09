@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Avançadas</title>
+</head>
+<body>
+    
+    <h1>Tabela de Horários</h1>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda</th>
+                <th>Terça</th>
+                <th>Quarta</th>
+                <th>Quinta</th>
+                <th>Sexta</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>13:00 - 13:45</td>
+                <td>PSI</td>
+                <td>-------</td>
+                <td rowspan="2">História</td>
+                <td>Servidores</td>
+                <td>Biologia</td>
+            </tr>
+         
+            <tr>
+                <td>13:45 - 14:30</td>
+                <td>PSI</td>
+                <td>Biologia</td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td colspan="6">
+                    <strong>Intervalo - 12:00 às 13:30</strong>
+                </td>
+            </tr>
+
+            <tr>
+                <td>14:50 - 15:35</td>
+                <td>-------</td>
+                <td colspan="2">Projeto Integrador</td>
+                <td rowspan="2">Banco de Dados</td>
+                <td>Matemática</td>
+            </tr>
+
+            <tr>
+                <td>15:35 - 16:20</td>
+                <td colspan="3">Inglês</td>
+                <td>Português</td>
+            </tr>
+
+            <tr>
+                <td colspan="6">
+                    <strong>Intervalo - 16:20 às 16:30</strong>
+                </td>
+            </tr>
+
+            <tr>
+                <td>16:30 - 17:15</td>
+                <td>Inglês</td>
+                <td>PSI</td>
+                <td>Português</td>
+                <td>APOO</td>
+                <td>Banco de Dados</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="6">Tabela de horários - 2º semestre</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

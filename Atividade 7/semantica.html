@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Seções Semânticas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        header, footer {
+            background: #004aad;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        article {
+            background: #eaf1ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        aside {
+            background: #fff3d1;
+            padding: 20px;
+            border-left: 5px solid orange;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>
+        <h1>Exemplo de Página com HTML Semântico</h1>
+            <p>Organização do conteúdo usando tags sem significado estrutural</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Seção Principal</h2>
+                <p>Essa seção introduz o conteúdo principal da página.</p>
+
+            <article>
+                <h3>Artigo 1</h3>
+                    <p>
+                        Este é um artigo de exemplo. O elemento <code>&lt;article&gt;</code> representa 
+                        um conteúdo independente e relevante por si só.
+                    </p>
+            </article>
+
+            <article>
+                <h3>Artigo 2</h3>
+                    <p>
+                        Outro conteúdo independente que poderia ser um post, texto ou notícia.
+                    </p>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Informações Complementares</h3>
+                <p>
+                    O elemento <code>&lt;aside&gt;</code> contém conteúdos auxiliares, como anúncios,
+                    links adicionais, curiosidades ou notas importantes.
+                </p>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Página criada para atividade de HTML Semântico</p>
+    </footer>
+
+</body>
+</html>
