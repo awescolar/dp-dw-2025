@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.nav,
+.sidebar,
+.main,
+.footer {
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botao {
+    background-color: orange;
+    color: black;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background-color: darkorange;
+}
+
+.sidebar {
+    background-color: rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    margin-bottom: 15px;
+}
+
+.lista-filtros {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-filtros a {
+    display: block;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.lista-filtros a:hover {
+    background-color: orange;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.produto {
+    background-color: rgb(255, 195, 92);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+.produto:hover {
+    transform: translateY(-5px);
+}
+
+.footer {
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "sidebar main main main"
+            "footer footer footer footer";
+
+        grid-template-columns: 1fr 2fr 2fr 2fr;
+    }
+
+    .header { grid-area: header; }
+
+    .nav {
+        grid-area: nav;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .sidebar { grid-area: sidebar; }
+
+    .main { grid-area: main; }
+
+    .footer { grid-area: footer; }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}

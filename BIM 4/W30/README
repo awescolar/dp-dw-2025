@@ -1,0 +1,38 @@
+# Projeto Final III – Responsividade
+
+## Sobre o projeto
+Esse projeto é um layout de e-commerce feito com HTML e CSS. O objetivo foi deixar o site responsivo, funcionando bem tanto no celular quanto no computador.
+
+## Responsividade
+O site foi feito usando Mobile-First.
+
+No celular:
+- Layout em coluna única
+- Menu hamburger ativo
+
+No desktop:
+- Layout com grid
+- Sidebar com filtros
+- Galeria com vários produtos
+
+## Menu Hamburger
+O menu mobile foi feito apenas com CSS, sem JavaScript.  
+Quando a tela fica pequena, o menu normal some e aparece o ícone hamburger, que abre o menu quando clicado.
+
+## Auditoria Lighthouse
+Foi feita uma análise usando o Lighthouse do Chrome.
+
+Problemas encontrados:
+
+1. Algumas imagens podem ser pesadas, o que pode deixar o site mais lento.
+
+2. Algumas imagens não possuem texto alternativo (alt), o que atrapalha acessibilidade.
+
+3. Alguns elementos poderiam ter contraste melhor para facilitar a leitura.
+
+## Tecnologias usadas
+- HTML
+- CSS
+- Flexbox
+- Grid
+- Media Queries

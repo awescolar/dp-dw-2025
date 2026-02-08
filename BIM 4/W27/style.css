@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    padding: 40px;
+}
+
+header h1 {
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botao {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: darkorange;
+}
+
+.botao:focus {
+    outline: 3px solid black;
+    outline-offset: 3px;
+}
